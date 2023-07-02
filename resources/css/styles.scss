@@ -1,0 +1,28 @@
+@use "../../node_modules/bootstrap/scss/bootstrap.scss";
+@use "./base/reset";
+@use "./base/utilities";
+@use "./base/variables";
+@use "./layouts/main-layout.scss";
+@use "./components/header.scss";
+@use "./components/hero.scss";
+
+html {
+    font-size: calc(60% + 0.8vmin);
+}
+main {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+* {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 2.2rem;
+}
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
