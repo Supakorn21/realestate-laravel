@@ -5,6 +5,7 @@
 @use "./layouts/main-layout.scss";
 @use "./components/header.scss";
 @use "./components/hero.scss";
+@use "./pages/listings.scss";
 
 html {
     font-size: calc(60% + 0.8vmin);
