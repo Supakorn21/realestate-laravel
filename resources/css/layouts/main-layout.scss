@@ -2,8 +2,5 @@
 @use "../base/utilities";
 @use "../base/variables";
 @use "../../../node_modules/bootstrap/scss/bootstrap.scss";
-@use "../style.scss";
-@use "../components/header.scss";
 
-body {
-}
+@use "../components/header.scss";
