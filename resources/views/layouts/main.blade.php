@@ -5,38 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tommy Realty</title>
+    <title>@yield('page-title')</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     @vite(['resources/css/styles.scss', 'resources/js/app.js'])
+ 
 </head>
+@yield('styles')
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__logo">
-                Tommy Realty
-            </div>
-            <div class="header__menu">
-                <a href="#" class="header__menu-link header__menu-link--active">Home</a>
-                <a href="#" class="header__menu-link">Listing</a>
-                <a href="#" class="header__menu-link">Property</a>
-                <a href="#" class="header__menu-link">Pages</a>
-            </div>
-            <div class="header__account">
-                <div class="header__account-link">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                <div class="header__account-link">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-            </div>
-
-        </div>
-
-    </header>
+   @include('components.header')
     @yield('content')
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    @yield('scripts')
 </body>
 
 </html>
