@@ -1,0 +1,54 @@
+.account-layout {
+    .request-list {
+        .all-requests {
+            font-weight: 700;
+        }
+        &__wrapper {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+            display: flex;
+            justify-content: space-between;
+        }
+        &__info-title {
+            font-weight: 700;
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
+        &__details {
+            color: rgb(119, 119, 119);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        &__info-status {
+            padding: 0.5rem 1rem;
+            &--success {
+                background: greenyellow;
+                color: white;
+                font-weight: 700;
+            }
+            &--cancel {
+                background: orange;
+                color: white;
+                font-weight: 700;
+            }
+            &--sold {
+                background: red;
+                color: white;
+                font-weight: 700;
+            }
+        }
+        &__info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

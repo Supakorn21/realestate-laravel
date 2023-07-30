@@ -33,18 +33,8 @@
                         <a href="{{route('account.show-status')}}">Listing Request Statys</a>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-8">
                      @yield('content')
-                </div>
-                 <div class="col-md-3">
-                    <div class="account__menu">
-                        <h2>Menu</h2>
-                        <a href="{{route('account.saved')}}">Saved Listings</a>
-                        <a href="{{route('account.show-status')}}">Listing Request Statys</a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                   @yield('content')
                 </div>
             </div>
         </div>
