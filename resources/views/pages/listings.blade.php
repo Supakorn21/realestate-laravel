@@ -30,7 +30,8 @@
         <div class="listings-properties">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    @for ($i = 0; $i < 8; $i++)
+                         <div class="col-md-3">
                         <div class="listings-properties__item">
                             <img src="https://buildingrva.com/wp-content/uploads/2022/05/46f4cd1f96bb040f2b2f814f8cd10caa.jpg"
                                 alt="listing_image" class="listings-properties__img">
@@ -61,6 +62,8 @@
                             </div>
                         </div>
                     </div>
+                    @endfor
+                   
                 </div>
             </div>
         </div>
