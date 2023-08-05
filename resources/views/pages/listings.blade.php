@@ -32,7 +32,7 @@
                 <div class="row">
                     @for ($i = 0; $i < 8; $i++)
                          <div class="col-md-3">
-                        <div class="listings-properties__item">
+                        <a href="{{route('show.listing',['slug' => 'slug', 'id' => $i])}}" class="listings-properties__item">
                             <img src="https://buildingrva.com/wp-content/uploads/2022/05/46f4cd1f96bb040f2b2f814f8cd10caa.jpg"
                                 alt="listing_image" class="listings-properties__img">
                                 <div class="listings-properties__saved ">
@@ -60,7 +60,7 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     @endfor
                    

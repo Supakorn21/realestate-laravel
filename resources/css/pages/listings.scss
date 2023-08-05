@@ -73,6 +73,12 @@
 
         &__item {
             position: relative;
+            display: block;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: rgba(219, 105, 29);
+            }
         }
 
         &__saved {
