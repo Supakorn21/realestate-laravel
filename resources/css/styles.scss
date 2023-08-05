@@ -8,6 +8,8 @@
 @use "./components/hero.scss";
 @use "./pages/listings.scss";
 @use "./pages/show-status";
+@use "./pages/auth";
+@use "./pages/single-listing";
 
 html {
     font-size: calc(60% + 0.8vmin);
