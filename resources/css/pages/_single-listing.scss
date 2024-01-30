@@ -20,20 +20,21 @@
             }
         }
         &__form {
-            height: 500px;
             background: white;
             width: 300px;
             border-radius: 15px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             padding: 20px;
         }
-        &__form-title {
+        &__form-label{
             font-size: 1rem;
             font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
+            display: block;
         }
         &__form-group {
             width: 100%;
+            margin-bottom: .5rem;
             &--horz {
                 display: flex;
                 .listing-top__form-option {
@@ -60,6 +61,93 @@
             }
             &:hover {
                 background-color: rgb(245, 246, 247);
+            }
+        }
+
+        &__form-button {
+            color: #000;
+            font-size: 1rem;
+            font-weight: 600;
+            border: 1px solid #f5f6f7;
+            width: 100%;
+            &:hover {
+                background-color: #f5f6f7;
+            }
+        }
+
+        .background-orange{
+                background-color: rgb(232,123,25);
+                color: white;
+        }
+    }
+
+    
+    .listing-info{
+        padding: 50px 0;
+        h1{
+            font-size: 1.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        &__details{
+            display: flex;
+            justify-content: space-between;
+            max-width: 300px;
+        }
+        &__details-text{
+            font-size: 1.2rem;
+            font-weight: 600;   
+        }
+        &__agent-title{
+            font-size: .9rem;
+            font-weight: 600;
+            margin-bottom: .5rem;
+            display: block;
+        }
+        &__agent-name{
+            font-size: 1.9rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            display: block;
+        }
+    }
+    .listing-extras{
+        &__details{
+            h2{
+                font-size: 1.7rem;
+                font-weight: 700;
+                margin-bottom: 2rem;
+            }
+            ul{
+              
+               li{
+                 list-style: square;
+                     margin-bottom: 1rem;
+               }
+            }
+            h3{
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: .5rem;
+                display: block;
+            }
+            p{
+                line-height: 2;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__gallery{
+              h2{
+                font-size: 1.7rem;
+                font-weight: 700;
+                margin-bottom: 2rem;
+            }
+            img{
+                width: 100%;
+                margin-bottom: 10px;
             }
         }
     }
